@@ -1,0 +1,459 @@
+/* body{
+    background: url('../img/bg-login2.gif') center center repeat-y; 
+} */  
+
+#help-here{
+    @include make-row;
+}
+
+.two-lane{
+    background: url('../img/bg-login.gif') center center repeat-y; 
+}
+
+.three-lane{
+    background: url('../img/bg-login2.gif') center center repeat-y; 
+}
+
+.here2-help {
+       @include make-xs-column(12);
+
+ @media (max-width:$screen-phone){
+        padding:0 0 30px 0;
+
+    }
+ @media (min-width:$screen-phone){
+        width:33%;
+
+    }
+
+       .cr-icon {
+        font-size: 10rem;
+        color: #003087;
+        line-height: 100px;
+        font-family: "Farmers";
+        text-align:center;
+        @media (max-width: $screen-phone) {
+            width: 125px;
+            float: left;
+            line-height: 60px;
+        }
+    }
+      .login-block-inner {
+        text-align: center;
+            @media (max-width: $screen-phone) {
+                float: left;
+                width: 60%;
+                padding-top: 10px;
+                text-align: left;
+            }
+            p{
+                line-height:20px; 
+            }
+        }
+
+}
+
+
+ #login-here {
+
+        text-align: center;
+        #startYourClaimBtn {
+            margin-top: 30px;
+        }
+      
+    }
+
+@media (max-width: $screen-tablet) {
+body{
+    height:100%;
+}
+html{
+    height:100%;
+}
+    body#login {
+        #wrapper-code{
+        margin-bottom:56px;
+         @media(max-width: $screen-phone){
+            /*float: left;*/
+            margin-bottom: 0px;
+         }
+
+        }
+
+    }
+    body#login #content-wrapper {
+        padding: 0 !important;
+        #login-here {
+        @media only screen and (max-width : 603px) and (orientation: portrait){
+         margin-bottom: 50px !important;
+        }
+       
+            margin: 0;
+        }
+    }
+    #guest-block {
+        background-color: #fff;
+        padding-top: 30px;
+    }
+    .login-block {
+        padding: 30px 30px 0 30px;
+    }
+    body#login footer {
+        margin: 0;
+        min-height:120px;
+    }
+}
+
+body#login {
+    @media(max-width: $screen-phone) {
+        float: left;
+    }
+    background: linear-gradient(90deg, #f1f1f1 61%, #fff 39%);
+    background: -webkit-linear-gradient(0deg, #F1F1F1 61%, #fff 39%); 
+    
+    @media(max-width: $screen-tablet) {
+         background: linear-gradient(90deg, #f1f1f1 66%, #fff 34%);
+    }
+
+    @media(max-width: $screen-phone) {
+         background: linear-gradient(90deg, #f1f1f1 100%, #fff 40%) !important;
+    }
+    .forForemost {
+        background: linear-gradient(90deg, #f1f1f1 50%, #fff 50%);
+    
+    @media(max-width: $screen-tablet) {
+         background: linear-gradient(90deg, #f1f1f1 50%, #fff 50%);
+    }
+    }
+   
+}
+
+#login-here {
+    @include make-row;
+    text-align: left;
+    .login-block {
+       
+        @include make-xs-column(12);
+        
+        @media only screen and (max-width : 603px) and (orientation: portrait) {
+            min-height:123px;
+        }
+
+ @media (min-width:$screen-phone){
+        width:33%;
+    }
+
+       
+        
+        h2 {
+            color: $dblue;
+            font-size: 3rem;
+            margin: 0 0 15px 0;
+            @media (min-width: $screen-tablet) and (max-width: $screen-desktop) {
+                font-size: 2.7rem;
+            }
+        }
+        .login-block-inner {
+            font-size: 1.5rem;
+        }
+      
+       @media only screen and (max-width : 603px) and (orientation: portrait){
+        h2 {
+            font-size:19px;
+
+            }
+        p {
+        min-height:55px;
+       }
+       input[type="submit"], .btn-submit{
+
+        max-width: 180px;
+        font-size:12px;
+        }
+
+       }
+
+         @media (max-width: $screen-phone) {
+            
+         h2, p {
+            padding-left: 40px;
+         }
+         p {
+            font-size: 1.5rem;
+         }
+          .input-btn {
+            text-align: center;
+
+            input {
+                width:80% !important;
+                margin-bottom: 15px;
+                  padding-top: 5px;
+            }
+        }
+    }
+}
+}
+
+#content-wrapper.hide-login {
+    #iHaveLogin {
+        display: none;
+    }
+    .login-block {
+        @include make-xs-column(6);
+         @media (max-width: $screen-phone) {
+            width: 100% ;
+        }
+    }
+    #guest-block {
+       
+         @media only screen and (max-width : 603px) and (orientation: portrait){
+            /*margin-left: 6px;*/
+            padding-left: 30px;
+         }
+        @media (max-width: $screen-phone) {
+            padding-left: 15px;
+        }
+         padding-left: 90px;
+    }
+}
+
+#content-wrapper.login {
+    /*margin: 150px auto 0 auto;*/
+    text-align: left;
+    height: 500px;
+    width: 100%;
+    h5 {
+        text-transform: uppercase;
+        font-family: 'Slate Pro Medium';
+        font-size: 1.8rem;
+    }
+}
+
+#claim-resources-wrap.for-mobile {
+    @media (max-width: $screen-phone) {
+       
+        h4 {
+            margin-top: 25px;
+             margin-bottom: 10px;
+        }
+    }
+
+    @media (min-width: $screen-tablet) {
+        display: none;
+    }
+    .cr-icon, .cr-icon2 {
+        @include make-xs-column(4);
+        font-size: 11rem !important;
+        padding:0;
+    }
+
+    .cr-icon2{
+        padding-left:30px;
+    }
+    h4 {
+        @include make-xs-column(8);
+        padding-left: 0;
+        padding-right: 0px !important;
+    }
+    margin: 0px 5px 40px 5px;
+}
+
+#claim-resources-wrap.for-nonmobile {
+    margin: 70px -15px 15px -15px;
+    width: 100%;
+    padding-left: 3%;
+    @media (max-width: $screen-phone)  {
+        display: none; }
+    @media (max-width:765px)  {
+        display: none; } 
+    @media (max-width: $screen-tablet) {
+       /* display: none;*/
+    }
+    h3 {
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+}
+
+#claim-resources-wrap {
+    @include shadow-this;
+    border: 1px solid $dgrey;
+    text-align: left;
+    display: table;
+    padding: 15px;
+    background-color: #fff;
+    .claim-resources {
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+        padding: 0;
+        padding-left: 20px !important;
+        @media (max-width: $screen-phone) {
+            padding-left: 0px !important;
+        }
+        .cr-icon {
+            font-family: "Farmers";
+            padding-right: 10px;
+            font-size: 13rem;
+            color: $dblue;
+            line-height: 100px;
+        }
+        .cr-icon2:before {
+            content: "\f071";
+        }
+        .cr-icon2 {
+            @extend .fa;
+            font-size: 5.3rem !important;
+            color: $dblue;
+            margin-top: 20px;
+            line-height: 80px !important;
+        }
+        h4 {
+            font-size: 2rem;
+            color: $dblue;
+            font-family: 'Slate Pro Medium';
+        }
+    }
+    a {
+        font-family: 'Slate Pro BK';
+        font-weight: bold;
+    }
+    @media only screen and (max-width : 603px) and (orientation: portrait) {
+         margin-bottom: 30px;
+    }
+
+}
+
+#glass-repairs {
+
+    ol {
+        margin: 0 0 0 15px;
+        padding: 0;
+        li {
+            list-style: inherit;
+        }
+    }
+
+    ol.single{
+        margin: 0;
+        li{
+            list-style:none !important; 
+        }
+    }
+
+    @media only screen and (max-width : 603px) and (orientation: portrait) {
+        p {
+            width: 75%;
+        }
+        #ShowAnchorM {
+            margin-left: 33%;
+        }
+        
+    }
+     @media only screen and (min-width : 600px) and (orientation: portrait){
+     #hideAnchorM {
+            float: right;
+            width: 67%;
+            font-size: 1.5rem;
+            margin-left: -3px;
+        }
+     }
+}
+
+#road-side ul {
+    padding-left: 15px;
+}
+
+#road-side h4 {
+    @media only screen and (max-width : 603px) and (orientation: portrait) {
+    margin-top: 35px;
+    }
+}
+
+#glass-repairs h4, #catastrophe-response h4{
+ @media only screen and (max-width : 603px) and (orientation: portrait){
+    margin-top: 25px;
+    }
+}
+
+
+#login-copy {
+    margin-top: 20px;
+    text-align: left;
+    clear: both;
+}
+
+#road-side .list-this li {
+    list-style: inherit;
+}
+
+#fraud-copy {
+    text-align: left;
+    float: left;
+    width: 100%;
+    a {
+        font-family: 'Slate Pro BK';
+        font-weight: bold;
+    }
+    @media (max-width: $screen-tablet) {
+       // background-color: #fff;
+        padding: 0 15px 60px 15px;
+        margin-top: 20px;
+         padding-bottom: 345px;
+    }
+    @media(max-width: $screen-phone){
+    
+       margin-top: 0px;
+       padding: 50px 10px 60px 20px;
+         background-color: #fff;
+          font-size: 1.5rem;
+    }
+
+
+}
+
+@media(max-width: $screen-phone){
+    
+    #claim-resources-wrap .claim-resources {
+       .cr-icon{
+       width:40%;
+       }
+
+       h4{
+       width:60%;
+       }
+       p {
+          float: right;
+          width: 60%;
+        font-size: 1.5rem;
+        margin-left: -3px;
+        }
+        .cr-icon2{
+        padding-left:22px;
+        margin-right: 16px;
+        }
+
+    }
+  
+
+}
+
+#iHaveLogin, #iDontHaveLogin, #guest-block{
+    text-align: left;
+    
+}
+
+
+
+/* #bg-color {
+        background-color: #f1f1f1;
+        top: 0;
+        position: absolute;
+        left: 0;
+        width: 60%;
+        z-index: -22;
+        //height: 194vh;
+        height:100%;
+    }
+    #bg-color.two-column {
+        width: 50%;
+    }*/
