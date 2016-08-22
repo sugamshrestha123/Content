@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_inside">
+            <div class="header">
+                <h1>Task Tracker</h1>
+                <span>v2.0</span>
+             </div>
+            <div class="left_part">
+                <h3>Create a Task</h3>
+                <ul>
+                    <li>Task Name</li>
+                    <li><input type="text" id="Taskname" class="text_field">
+                        <span class="error taskname">Please Fill The TaskName</span></li>
+                    <li>Date</li>
+                    <li><input type="text" id="Date" class="text_field">
+                        <span class="error taskdate">Please Fill The Date</span>
+                        <span class="error taskdateincrct">Date Should be dd/mm/yyyy</span>
+                    </li>
+                    <li>Assigned To</li>
+                    <li><input type="text" id="AssignTo" class="text_field">
+                        <span class="error taskAssigned ">Please Fill The TaskAssigned</span>
+                    </li>
+                </ul>
+                <button id="submit">submit</button>
+            </div>
+            <div class="right_part">
+                <h3>Existing Task</h3>
+                <div class="taskList">
+                    <table id="task_table">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

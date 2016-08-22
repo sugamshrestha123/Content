@@ -1,0 +1,90 @@
+
+body {
+    background: url("../images/slice-image.jpg") repeat-x #f0f0f0;
+    padding: 8px;
+}
+.wrapper{
+    width: 100%;
+    overflow: auto;
+    background: #f0f0f0;
+}
+.wrapper_inside{
+  width:100%;
+  margin:auto;
+}
+.header{
+   height:111px;
+   padding-left:20px;
+}
+.left_part{
+    width:49%;
+    background-color: #fff;
+    float:left;
+    padding-left: 20px;
+    padding-bottom:20px;
+}
+.left_part ul{
+    padding-left: 0px;
+    list-style-type: none;
+}
+.left_part ul li:nth-child(even){
+    margin-bottom:20px;
+}
+.left_part ul li .text_field{
+    width: 80%;
+    height: 30px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+}
+.left_part button{
+    padding: 10px 25px 10px 25px;
+    background: none;
+    background-color: #434343;
+    color: #fff;
+    border: 1px solid #434343;
+    border-radius:5px;
+}
+.right_part{
+    width: 45%;
+    background-color: #fff;
+    float: right;
+    height:306px;
+    padding-left: 20px;
+    padding-bottom:20px;
+    margin-left: 20px;
+}
+.right_part .text_area{
+    width: 400px;
+    height: 200px;
+    border: 4px solid #dedede;
+    overflow-y: scroll;
+}
+.taskList {
+    overflow-y: scroll;
+    height: 247px;
+    display: inline-block;
+}
+#task_table{
+    border-spacing: 0px;
+    border: 4px solid #f0f0f0;
+    width:500px;
+
+}
+#task_table tr:nth-child(odd){
+   background-color:#fff;
+}
+#task_table tr:nth-child(even){
+    background-color:#f0f0f0;
+}
+#task_table td{
+    padding:8px;
+}
+.border{
+    border: 1px solid red !important;
+}
+.error{
+    color: red;
+    display: none;
+    float: left;
+}
