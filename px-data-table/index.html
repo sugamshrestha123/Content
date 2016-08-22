@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+	<style>
+	.outer{
+		width:600px;
+		height:400px;
+		margin: 20px auto;
+	}
+	img{
+		width: 100%;
+		height: 400px;
+
+
+	}
+	@media only screen and (max-width:768px){
+		
+img{
+	width: 50%;
+	height: auto;
+}
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body >
+<div ng-app="demoCarousel">
+<div ng-controller="carouselCtrl">
+<div class="outer">
+<img ng-src="{{rest}}" width="600" height="400">
+
+</div>
+<button ng-click="previous()" style="float:left">Previous</button>
+<button ng-click="next()" style="float:right">Next</button>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
